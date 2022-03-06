@@ -1,0 +1,36 @@
+@mixin telefono {
+    @media (min-width: $telefono) and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) and (max-width: $desktop){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin btn {
+    padding: $separacion / 2;
+    background-color: $colorBotones-Icons;
+    border-radius: 0.5rem;
+    transition: all 100ms ease-in-out;
+    &:hover{
+        background-color: $colorImg;
+        cursor: pointer;
+    }
+}
+
+@mixin img($url) {
+    width: 100%;
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
