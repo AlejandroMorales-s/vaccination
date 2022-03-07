@@ -1,0 +1,46 @@
+.reasons__info-container{
+    max-width: 50%;
+    .reasons__title{
+        margin: calc($separacion * 2) 0 calc($separacion / 2) 0;
+    }
+    .reasons__info{
+        line-height: 3rem;
+    }
+}
+.reasons__cards{
+    margin: $separacion 0 calc($separacion * 2) 0;
+    display: grid;
+    column-gap: calc($separacion / 2);
+    grid-template-columns: repeat(4, 1fr);
+    .reasons__card{
+        border: 3px solid rgba($color: #F2F4F8, $alpha: 0.5);
+        padding: calc($separacion / 2);
+        border-radius: 1rem;
+        &:hover{
+            box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.1);
+        }
+        .reasons__icon-container{
+            @include iconContainer-card;
+            &:hover{
+                box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.15);
+            }
+        }
+        .c1{
+            @include logo-card('../img/configuration.png')
+        }
+        .c2{
+            @include logo-card('../img/blueshield.png')
+        }
+        .c3{
+            @include logo-card('../img/people.png')
+        }
+        .c4{
+            @include logo-card('../img/grafic.png')
+        }
+        .card__title{
+            font-weight: $regular;
+            font-size: 2.5rem;
+            margin: calc($separacion / 2) 0;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.vaccines{
+    @include img('../img/vaccines.png');
+    height: 10rem;
+    margin: $separacion auto;
+}
