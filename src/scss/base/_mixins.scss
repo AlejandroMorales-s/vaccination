@@ -17,8 +17,9 @@
 }
 
 @mixin btn {
-    padding: $separacion / 2;
-    background-color: $colorBotones-Icons;
+    color: $blanco;
+    padding: 1.5rem 3.3rem 1.5rem 3.3rem;
+    background-color: $colorImg;
     border-radius: 0.5rem;
     transition: all 100ms ease-in-out;
     &:hover{
@@ -28,9 +29,25 @@
 }
 
 @mixin img($url) {
-    width: 100%;
+    max-width: 100%;
     background-image: url($url);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@mixin logo($url) {
+    background-image: url($url);
+    background-size: cover;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+@mixin iconContainer {
+    background-color: $colorLogoBg;
+    padding: 0.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
 }
