@@ -1,5 +1,10 @@
 .reasons__info-container{
-    max-width: 50%;
+    display: flex;
+    .titles-arrow{
+        @include img('../img/titles.jpg');
+        width: 100%;
+        height: 20rem;
+    }
     .reasons__title{
         margin: calc($separacion * 2) 0 calc($separacion / 2) 0;
     }

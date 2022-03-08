@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS Custom-->
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/71bc87b5be.js" crossorigin="anonymous"></script>
     <title>Vaccination</title>
 </head>
 <body>
@@ -100,10 +100,14 @@
     </header>
     <main class="container">
         <div class="vaccines"></div>
+        <!--Reasons-->
         <div class="reasons">
             <div class="reasons__info-container">
-                <h2 class="reasons__title">Why should I vaccine?</h2>
-                <p class="reasons__info">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+                <div class="reasons__info">
+                    <h2 class="reasons__title">Why should I vaccine?</h2>
+                    <p class="reasons__info">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+                </div>
+                <div class="titles-arrow"></div>
             </div>
             <div class="reasons__cards">
                 <div class="reasons__card">
@@ -138,6 +142,90 @@
                     <p class="card__info">COOVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
                 </div>
             </div>
+        </div>
+        <!--Preparations-->
+        <div class="preparations">
+            <div class="preparations__flex container">
+                <div class="preparations__img-container">
+                    <div class="preparations-img">
+                    </div>
+                </div>
+
+                <div class="preparations__info">
+                    <h1 class="preparations__info-title">Preparations Before Vaccine</h1>
+                    <p class="preparations__info-text">The success of vaccines is strongly influenced by the strength of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
+
+                    <div class="preparations__cards-container">
+                        <div class="preparations__card">
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="p1"></div>
+                                </div>
+                                <p>Avoid alcoholic bevarages</p>
+                            </div>
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="arrow-up"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preparations__card">
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="p2"></div>
+                                </div>
+                                <p>Avoid stress</p>
+                            </div>
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="arrow-up"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preparations__card">
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="p3"></div>
+                                </div>
+                                <p>Eat healthy food</p>
+                            </div>
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="arrow-up"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preparations__card">
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="p4"></div>
+                                </div>
+                                <p>Get enough sleep</p>
+                            </div>
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="arrow-up"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preparations__card">
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="p5"></div>
+                                </div>
+                                <p>Exercise or physical activity</p>
+                            </div>
+                            <div class="hero__date-title--container">
+                                <div class="icon-container">
+                                    <div class="arrow-up"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </main>
 </body>

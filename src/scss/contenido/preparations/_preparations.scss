@@ -1,0 +1,54 @@
+.preparations__flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: $separacion;
+    .preparations__img-container{
+        width: 100%;
+        height: 75rem;
+        display: flex;
+        align-items: flex-end;
+        .preparations-img{
+            width: 100%;
+            height: 100%;
+            @include img('../img/preparations.jpg')
+        }
+    }
+    .preparations__info{
+        margin-top: calc($separacion + 2rem);
+        .preparations__info-text{
+            line-height: 3.5rem;
+            margin-top: $separacion;
+        }
+    }
+}
+
+.preparations__cards-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: calc($separacion / 3);
+}
+.preparations__card{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    padding: calc($separacion / 3);
+    border: 3px solid rgba($color: #F2F4F8, $alpha: 0.5);
+}
+.p1{
+    @include logo('../img/shieldX.png');
+}
+.p2{
+    @include logo('../img/x.png');
+}
+.p3{
+    @include logo('../img/statistics.png')
+}
+.p4{
+    @include logo('../img/palomita.png');
+}
+.p5{
+    @include logo('../img/heart.png');
+}
+.arrow-up{
+    @include logo('../img/arrow.png')
+}
