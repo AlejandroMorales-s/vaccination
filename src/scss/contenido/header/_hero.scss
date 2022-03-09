@@ -97,11 +97,13 @@
     .date{
         width: 100%     ;
         display: flex;
-        column-gap: $separacion;    }
+        column-gap: $separacion;    
+    }
     .type{
         width: 100%     ;
         display: flex;
-        column-gap: $separacion;    }
+        column-gap: $separacion;    
+    }
 }
 .hero__date-title{
     display: flex;

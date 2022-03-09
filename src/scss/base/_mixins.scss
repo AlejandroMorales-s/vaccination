@@ -27,6 +27,13 @@
         cursor: pointer;
     }
 }
+@mixin btnEmergency {
+    text-align: center;
+    padding: 1.5rem 3.3rem 1.5rem 3.3rem;
+    background-color: $colorEmergencyBg;
+    border-radius: 0.5rem;
+    transition: all 100ms ease-in-out;
+}
 
 @mixin img($url) {
     background-image: url($url);

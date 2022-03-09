@@ -1,0 +1,74 @@
+.emergency{
+    margin-top: calc($separacion * 2)
+}
+.emergency__flex{
+    .preparations__img-container{
+        .emergency-img{
+            @include img('../img/emergency.jpg');
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.emergency__cards-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc($separacion / 2);
+    margin-top: calc($separacion * 2);
+}
+.emergency__card{
+    display: flex;
+    flex-direction: column;
+    row-gap: calc($separacion / 1.5);
+    .emergency__icon{
+        .emergency__icon-container{
+            @include iconContainer-card;
+        }
+    }
+    .emergency__card-info{
+        .card-info{
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.5rem;
+            .card-info__title{
+                color: $colorSubtitles;
+            }
+        }
+    }
+    .emergency__btn{
+        @include btnEmergency;
+        .emergency__btn-text{
+            color: $colorImg;
+            font-weight: $medium;
+        }
+    }
+}
+.emergency__card:hover{
+    box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.1);
+    .emergency__icon{
+        box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.1);
+
+    }
+    .emergency__btn{
+        .emergency__btn-text{
+            color: $blanco;
+        }
+        background-color: $colorImg;
+
+            &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.e1{
+    @include logo-card('../img/phone.png')
+}
+.e2{
+    @include logo-card('../img/chat.png')
+}
+.e3{
+    @include logo-card('../img/video.png')
+}
+.e4{
+    @include logo-card('../img/message.png')
+}
