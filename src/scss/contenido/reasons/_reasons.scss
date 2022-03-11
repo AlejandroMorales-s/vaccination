@@ -17,18 +17,22 @@
     display: grid;
     column-gap: calc($separacion / 2);
     grid-template-columns: repeat(4, 1fr);
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: calc($separacion / 2);
+    }
     .reasons__card{
         border: 3px solid rgba($color: #F2F4F8, $alpha: 0.5);
         padding: calc($separacion / 2);
         border-radius: 1rem;
         &:hover{
             box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.1);
+            .reasons__icon-container{
+                box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.15);
+            }
         }
         .reasons__icon-container{
             @include iconContainer-card;
-            &:hover{
-                box-shadow: 0px 3px 30px 0px rgba(8, 41, 177, 0.15);
-            }
         }
         .c1{
             @include logo-card('../img/configuration.png')
