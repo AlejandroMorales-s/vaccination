@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Vaccination</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--Nav-->
-    <header class="nav">
+    <header class="nav" data-aos="fade-up">
         <div class="nav absolute">
             <div class="container nav-container">
                 <h1 class="logo">Vaccination</h1>
@@ -101,10 +102,10 @@
             <div class="hero__img"></div>
         </div>
     </header>
-    <main class="container">
+    <main class="container" data-aos="fade-up">
         <div class="vaccines"></div>
         <!--Reasons-->
-        <div class="reasons">
+        <div class="reasons" data-aos="fade-up">
             <div class="reasons__info-container">
                 <div class="reasons__info">
                     <h2 class="reasons__title">Why should I vaccine?</h2>
@@ -147,7 +148,7 @@
             </div>
         </div>
         <!--Preparations-->
-        <div class="preparations">
+        <div class="preparations" data-aos="fade-up">
             <div class="preparations__flex container">
                 <div class="preparations__img-container">
                     <div class="preparations-img"></div>
@@ -229,7 +230,7 @@
         </div>
 
         <!--Emergency-->
-        <div class="emergency">
+        <div class="emergency" data-aos="fade-up">
             <div class="preparations__flex container emergency__flex">
 
                 <div class="preparations__info emergency__info">
@@ -320,7 +321,7 @@
         </div>
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="footer-container container">
             <div class="footer__info">
                 <div class="footer__info1">
@@ -357,5 +358,10 @@
             </div>
         </div>
     </footer>
+    <script src="src/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
